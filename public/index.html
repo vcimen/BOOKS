@@ -10,37 +10,37 @@
 
 
   </head>
-  <body class="container-sm col-4 mt-5">
-    <h1 class="mb-4 text-center">Book Store App</h1>
+  <body class="container-sm col-5 mt-5">
+    <h1 class="mb-4 text-center">Test Case Management System</h1>
     <div>
       <table class="table input-group input-group-lg">
         <tr>
-          <td>Name:</td>
+          <td>UserStoryName:</td>
           <td><input type="text" class="form-control" ng-model="Name" /></td>
         </tr>
         <tr>
-          <td>Isbn:</td>
+          <td>UserStoryID:</td>
           <td><input type="text" class="form-control" ng-model="Isbn" /></td>
         </tr>
         <tr>
-          <td>Author:</td>
+          <td>TestCaseName:</td>
           <td><input type="text" class="form-control" ng-model="Author" /></td>
         </tr>
         <tr>
-          <td>Pages:</td>
+          <td>TestCaseID:</td>
           <td><input type="number" class="form-control" ng-model="Pages" /></td>
         </tr>
       </table>
-      <button class="btn btn-primary" ng-click="add_book()">Insert the book</button>
+      <button class="btn btn-primary" ng-click="add_book()">Insert User Story</button>
     </div>
     
     <div>
       <table class="table">
         <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Isbn</th>
-          <th scope="col">Author</th>
-          <th scope="col">Pages</th>
+          <th scope="col">UserStoryName</th>
+          <th scope="col">UserStoryID</th>
+          <th scope="col">TestCaseName</th>
+          <th scope="col">TestCaseID</th>
           <th></th>
         </tr>
         <tr ng-repeat="book in books" >
